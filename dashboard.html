@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Star | Dashboard</title>
+    
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css.map">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+</head>
+
+<body >
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo.png" alt="Comapny logo" class="p-3">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bi bi-x-circle"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-2.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                   HP1
+                </div>
+            </div>
+            <button class="btn btn-outline" onclick="window.location.href = 'index.html'">
+                <i class="bi bi-box-arrow-in-right" title="logout"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="dashboard.html" class="active">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+           
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown" >
+                    <i class="bi bi-journals"></i>
+                    <span>Masters</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="assembly.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Assembly Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="warehouse.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Shift Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Storage Master</span> 
+                        </a>
+                    </li>
+                    <li><a href="area-zone.html">
+                    <i class="bi bi-record-circle"></i>
+                    <span>Defect Master</span>
+                </a>
+            </li>
+            <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Location Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>MIC Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Assembly Line Defect Mapping</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Print Field Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Barcode Label Formating Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Production BOM Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Sales BOM Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Chasis Type Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Defect Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Testing Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Serial No. Logic Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Sales Order Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Cycle Counting Master</span> 
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                     <i class="bi bi-gear"></i>
+                    <span>settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="pickslip-creation.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Plants </span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Role Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>User Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Data Logger </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Printers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Permission</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Options</span>
+                        </a>
+                    </li>              
+                    
+                    
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Production Report</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Fail History Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Loading Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Packing Serial Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Loading Packing Hourly Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Machine History Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material Serial Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material Status</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>MIC Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Label Status Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pending Packing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Block and Unblock Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Chassis without loading</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Summary Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Loading Packing Hourly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Reprint</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material MIC Detail</span>
+                        </a>
+                    </li>                                
+                    
+                    
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Other Report</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Goods Issue Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Goods Receiving Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Dispatch Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Component Status Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Recording Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Quality Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Rejection Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Rework Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Storage Location Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Sales Return Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Stock Count Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>PT IDU Status</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Container Stuffing Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>First Time Right Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>IDU Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>NRGP Report</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+            </li>
+          
+            
+            
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-person-lines-fill"></i>
+                    <span>Profile</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Change Password</span>
+                        </a>
+                    </li>
+                   <!--  <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li> -->
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-logo" style="border-top: 1px solid #eee; height:auto;display: flex;
+        flex-direction: column;">
+            <img src="./images/logo-lg-1.png" alt="Comapny logo" style="height: 40px;">
+            <p class="py-2 small">Version : 1.0.0.20211210</p>
+            
+        </div>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-justify-left"></i>
+            </div>
+            <div class="main-title d-flex justify-content-between w-100">
+                <span>dashboard</span> <span class="plant">Plant : 1801</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+               <div class="col d-flex justify-content-center align-items-center" style="height: calc(100vh - 65px)">
+                <img src="./images/logo.png" class="w-50">
+               </div>
+                    
+
+                </div>
+               
+            </div>
+
+           
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    
+    <!-- APP JS -->
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+   <!--  <script src="./js/Chart.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+    <script src="./js/app.js"></script>
+    <div class="loading-part" style="display: none;">
+        <div class="loading-box">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
