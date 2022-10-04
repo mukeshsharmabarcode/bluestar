@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueStar | View Assembly Line Master</title>
+    <title>BlueStar | Add Assembly Line Master</title>
     
     <!-- APP CSS -->
     <link rel="stylesheet" href="./css/grid.css">
@@ -17,7 +17,7 @@
 
 <body >
 
-      <!-- SIDEBAR -->
+       <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-logo">
             <img src="./images/logo.png" alt="Comapny logo" class="p-3">
@@ -498,7 +498,7 @@
                 <i class="bi bi-justify-left"></i>
             </div>
             <div class="main-title d-flex justify-content-between w-100">
-                <span>View Assembly Line Master</span> <span class="plant">Plant : 1801</span>
+                <span>Add MIC Master</span> <span class="plant">Plant : 1801</span>
             </div>
         </div>
         <div class="main-content">
@@ -506,125 +506,108 @@
                 <div class="row">
                     <div class="card p-0">
                         <div class="card-header bg-dark text-white h5">
-                         Detail <span class="text-right p-cursor" id="edit"> Edit</span>
+                         Detail <span class="text-right d-none"> Edit</span>
                         </div>
-                          <div class="card-body">
+                        <div class="card-body">
                             <div class="row">
                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                <div class="input-group-my pt-2">
-                                    <div class="group1 mb-2">      
-                                         <input type="text" class="input1" disabled="disabled" required  style="border-radius: 5px 0 0 5px;">
-                                         <!-- <span class="highlight"></span>
-                                         <span class="bar"></span> -->
-                                         <label class="label1">Plant Code <span style="color:red;">*</span></label>
-                                         <p class="has-error m-0">Plant Code is required</p>
-                                       </div>
-                                      </div>
-                            </div>
+                                            <div class="input-group-my pt-2">                                    
+                                                <div class="group mb-2 ">      
+                                                  <select type="text" class="input1"   required>
+                                                  <option value=""> </option>
+                                                  <option value="Software Deptt">xxxxxx</option>
+                                                  <option value="Software Deptt">xxxxxx</option>             
+                                                  </select>                                                 
+                                                  <label class="label1">Plant Code</label>
+                                                   <p class="has-error m-0">Plant Code is required</p>                       
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
                                 <div class="input-group-my pt-2">
                                     <div class="group1 mb-2">      
-                                         <input type="text" class="input1"  disabled="disabled" required  style="border-radius: 5px 0 0 5px;">
+                                         <input type="text" class="input1"  required>
                                          <!-- <span class="highlight"></span>
                                          <span class="bar"></span> -->
-                                         <label class="label1">Assembly Line Code <span style="color:red;">*</span></label>
-                                         <p class="has-error m-0">Assembly Line Code is required</p>
-                                       </div>
-                                      </div>
-                            </div>
-                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                <div class="input-group-my pt-2">
-                                    <div class="group1 mb-2">      
-                                         <textarea type="text" class="input1"   disabled="disabled" required   style="height: 50px;border-radius: 5px 0 0 5px;" ></textarea>
-                                         <!-- <span class="highlight"></span>
-                                         <span class="bar"></span> -->
-                                         <label class="label1">Description <span style="color:red;">*</span></label>
-                                         <p class="has-error m-0">Description is required</p>
+                                         <label class="label1">Material Code <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">Material Code is required</p>
                                        </div>
                                       </div>
                             </div>
                             
-                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                
-                                <div class="card shadow-none">
-                                      <div class="card-header">
-                                        Print Packing Label
-                                      </div>
-                                <ul class="list-group">
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox"  checked="checked">
-                                    after HLD Ok
-                                  </li>
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                    After All Defect Ok
-                                  </li>
-                                  
-                                </ul>
-                            </div><br>
-                             <div class="card shadow-none">
-                                      <div class="card-header">
-                                       Scan Config
-                                      </div>
-                                <ul class="list-group">
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" checked="checked">
-                                   Only Scaning
+                            <div class="row my-3">
+                 <div class="body-table">
+                  <table class="table table-striped table-hover table-bordered table-responsive text-center " style="height: 200px;">
+                    <thead class="table-dark text-center">
+                        <tr>
+                          <th  class="text-center" scope="col">Group Code</th>
+                          <th class="text-center" scope="col">Operation No</th>
+                          <th class="text-center" scope="col">Inspection No</th>
+                          <th class="text-center" scope="col">MIC Code</th>
+                          <th class="text-center" scope="col">MIC Description</th>
+                          <th class="text-center" scope="col">Category</th>
+                          <th class="text-center" scope="col">Lower Limitl</th>
+                          <th class="text-center" scope="col">Upper Limit</th>
+                          <th class="text-center" scope="col">Uom</th>
+                          <th class="text-center" scope="col">Decimal Place</th>                          
+                          <th class="text-center" scope="col">Status</th>
+                           <th class="text-center" scope="col">Formula</th>
+                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                       
+                        
+                      </tbody>
+                  </table>
+                </div>
+             </div>
 
-                                  </li>
-                                  
-                                  
-                                </ul>
+                 <div class="col-lg-3 col-12 col-sm-2 col-md-2">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">Group No. </label>
+                                         <p class="has-error m-0">Group No. is required</p>
+                                       </div>
+                                      </div>
+                            </div> 
+                            <div class="col-5 text-end pt-2"> 
+                            <button type="button" class="btn btn-primary">Change Group</button>
+                                    <button type="button" class="btn btn-primary">Set Initial</button>
+                                    <button type="button" class="btn btn-primary">Set HLD [S-3]</button>
+                                    <button type="button" class="btn btn-primary">Set ELT [S-4]</button>
+                                    </div>  
+                                    <div class="col-lg-2 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">Formula </label>
+                                         <p class="has-error m-0">Formula is required</p>
+                                       </div>
+                                      </div>
                             </div>
-                            </div>
-
+                             <div class="col-2 text-end pt-2"> 
+                            <button type="button" class="btn btn-primary">Change Formula</button>
+                                    
+                                    </div>        
 
                            
                            
-                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                
-                                <div class="card shadow-none">
-                                      <div class="card-header">
-                                       Data Logger
-                                      </div>
-                                <ul class="list-group">
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" checked="checked">
-                                  is Agramknow logger
-                                  <input type="text" class="input1"  placeholder="Connection String">
-                                  </li>
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                  is Magmeet
-                                  <input type="text" class="input1"  placeholder="Connection String">
-                                  </li>
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                  is MDF Logger
-                                  <input type="text" class="input1"  placeholder="Folder 1 path"><br>
-                                  <input type="text" class="input1"  placeholder="Table Name">
-                                  </li>
-                                  
-                                  
-                                </ul>
-                            </div>
-                            </div>
-                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                    Active
-                                    </label>
-                                </div>
-                            </div>
+                            
+                            
                             
                             </div>
-                           <div class="row">
+                            <div class="row">
                                 <div class="col-12 text-end">
                                     <button type="button" class="btn btn-kec">Save</button>
-                                    <button type="button" class="btn btn-warning">Refresh</button>
                                     <button type="button" class="btn btn-secondary" 
-                                    onclick="window.location.href = 'assembly.html'">Cancel</button>
+                                    onclick="window.location.href = 'MICMaster.html'">Cancel</button>
                                   </div>
                             </div>
                         </div>

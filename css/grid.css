@@ -4,10 +4,10 @@
     margin: 0 -15px;
 }
 
-[class*="col-"] {
+/*[class*="col-"] {
     padding: 0 15px;
     margin-bottom: 20px;
-}
+}*/
 
 .col-1 {
     width: 8.33%;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueStar | View Assembly Line Master</title>
+    <title>BlueStar | View Material Master</title>
     
     <!-- APP CSS -->
     <link rel="stylesheet" href="./css/grid.css">
@@ -17,7 +17,7 @@
 
 <body >
 
-      <!-- SIDEBAR -->
+    <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-logo">
             <img src="./images/logo.png" alt="Comapny logo" class="p-3">
@@ -498,7 +498,7 @@
                 <i class="bi bi-justify-left"></i>
             </div>
             <div class="main-title d-flex justify-content-between w-100">
-                <span>View Assembly Line Master</span> <span class="plant">Plant : 1801</span>
+                <span>View Material Master</span> <span class="plant">Plant : 1801</span>
             </div>
         </div>
         <div class="main-content">
@@ -511,31 +511,38 @@
                           <div class="card-body">
                             <div class="row">
                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                <div class="input-group-my pt-2">
-                                    <div class="group1 mb-2">      
-                                         <input type="text" class="input1" disabled="disabled" required  style="border-radius: 5px 0 0 5px;">
-                                         <!-- <span class="highlight"></span>
-                                         <span class="bar"></span> -->
-                                         <label class="label1">Plant Code <span style="color:red;">*</span></label>
+                                  <div class="input-group-my pt-2">
+                                    
+                                    <div class="group mb-2 ">      
+                                      <select type="text" class="input1"   disabled required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label1">Plant Code <span style="color:red;">*</span></label>
                                          <p class="has-error m-0">Plant Code is required</p>
-                                       </div>
-                                      </div>
+                                     
+                                    </div>
+                                        
+                                </div>
                             </div>
                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
                                 <div class="input-group-my pt-2">
                                     <div class="group1 mb-2">      
-                                         <input type="text" class="input1"  disabled="disabled" required  style="border-radius: 5px 0 0 5px;">
+                                         <input type="text" class="input1"  disabled required>
                                          <!-- <span class="highlight"></span>
                                          <span class="bar"></span> -->
-                                         <label class="label1">Assembly Line Code <span style="color:red;">*</span></label>
-                                         <p class="has-error m-0">Assembly Line Code is required</p>
+                                         <label class="label1">Material Code <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">Material Code is required</p>
                                        </div>
                                       </div>
                             </div>
                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
                                 <div class="input-group-my pt-2">
                                     <div class="group1 mb-2">      
-                                         <textarea type="text" class="input1"   disabled="disabled" required   style="height: 50px;border-radius: 5px 0 0 5px;" ></textarea>
+                                         <textarea type="text" class="input1"   required style="height: 40px;" ></textarea>
                                          <!-- <span class="highlight"></span>
                                          <span class="bar"></span> -->
                                          <label class="label1">Description <span style="color:red;">*</span></label>
@@ -543,73 +550,82 @@
                                        </div>
                                       </div>
                             </div>
-                            
                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                
-                                <div class="card shadow-none">
-                                      <div class="card-header">
-                                        Print Packing Label
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  disabled required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">Alt. Material Code <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">Alt. Material Code is required</p>
+                                       </div>
                                       </div>
-                                <ul class="list-group">
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox"  checked="checked">
-                                    after HLD Ok
-                                  </li>
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                    After All Defect Ok
-                                  </li>
-                                  
-                                </ul>
-                            </div><br>
-                             <div class="card shadow-none">
-                                      <div class="card-header">
-                                       Scan Config
+                            </div>
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                  <div class="input-group-my pt-2">
+                                    
+                                    <div class="group mb-2 ">      
+                                      <select type="text" class="input1"   disabled required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label1">Chassis Type <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">Chassis Type is required</p>
+                                     
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                             
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  disabled required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">Customer Material Code <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">Customer Material Code is required</p>
+                                       </div>
                                       </div>
-                                <ul class="list-group">
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" checked="checked">
-                                   Only Scaning
-
-                                  </li>
-                                  
-                                  
-                                </ul>
                             </div>
-                            </div>
-
-
-                           
-                           
-                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
-                                
-                                <div class="card shadow-none">
-                                      <div class="card-header">
-                                       Data Logger
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1" disabled required>                                    
+                                         <label class="label1">No. of FG Label Print </label>                
+                                       </div>
                                       </div>
-                                <ul class="list-group">
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" checked="checked">
-                                  is Agramknow logger
-                                  <input type="text" class="input1"  placeholder="Connection String">
-                                  </li>
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                  is Magmeet
-                                  <input type="text" class="input1"  placeholder="Connection String">
-                                  </li>
-                                  <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                  is MDF Logger
-                                  <input type="text" class="input1"  placeholder="Folder 1 path"><br>
-                                  <input type="text" class="input1"  placeholder="Table Name">
-                                  </li>
-                                  
-                                  
-                                </ul>
                             </div>
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                  <div class="input-group-my pt-2">
+                                    
+                                    <div class="group mb-2 ">      
+                                      <select type="text" class="input1"   disabled required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">EA</option>
+                                      <option value="Software Deptt">NO</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label1">UOM</label>
+                                         
+                                     
+                                    </div>
+                                        
+                                </div>
                             </div>
-                             <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1" disabled required>                                    
+                                         <label class="label1">Print Comment </label>                
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
@@ -617,6 +633,233 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="col-lg-12 col-12 col-sm-12 col-md-12 mb-2">
+                                
+                                <div class="card shadow-none">
+                                      <div class="card-header">
+                                        Print Packing Label
+                                      </div>
+                                      <div class="row p-1 my-2">
+                                        <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                            <div class="input-group-my pt-2">                                    
+                                                <div class="group mb-2 ">      
+                                                  <select type="text" class="input1"   disabled required>
+                                                  <option value=""> </option>
+                                                  <option value="Software Deptt">xxxxxx</option>
+                                                  <option value="Software Deptt">xxxxxx</option>             
+                                                  </select>                                                 
+                                                  <label class="label1">Chasis Label Format </label>                       
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                            <div class="input-group-my pt-2">                                    
+                                                <div class="group mb-2 ">      
+                                                  <select type="text" class="input1"   disabled required>
+                                                  <option value=""> </option>
+                                                  <option value="Software Deptt">xxxxxx</option>
+                                                  <option value="Software Deptt">xxxxxx</option>             
+                                                  </select>                                                 
+                                                  <label class="label1">Packing Label Format</label>                       
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                            <div class="input-group-my pt-2">                                    
+                                                <div class="group mb-2 ">      
+                                                  <select type="text" class="input1"   disabled required>
+                                                  <option value=""> </option>
+                                                  <option value="Software Deptt">xxxxxx</option>
+                                                  <option value="Software Deptt">xxxxxx</option>             
+                                                  </select>                                                 
+                                                  <label class="label1">DataPlate Label Format</label>                       
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                             
+                            </div>
+                            <div class="col-lg-12 col-12 col-sm-12 col-md-12 mb-2">
+                                
+                                <div class="card shadow-none">
+                                      <div class="card-header">
+                                        Printing Permissions
+                                      </div>
+                                <ul class="list-group flex-row flex-wrap ">
+                                  <li class="list-group-item border-0 ">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    Print Chasis Label  
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    Perform Testing 
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    HLD QC Testing  
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    ELT Testing
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                   PDI 
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                   Is Parent Material
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    Is OEM
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                   In House
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    EO Tracking  
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    Print MRP Label 
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                   Print DataPlate Label     
+                                  </li>
+                                  <li class="list-group-item border-0">
+                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    Print Carton Label
+                                  </li>
+                                  
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-6 col-12 col-sm-6 col-md-6">
+                                  <div class="input-group-my pt-2">
+                                    
+                                    <div class="group mb-2 ">      
+                                      <select type="text" class="input1"   disabled required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">xxxxxx</option>
+                                      <option value="Software Deptt">xxxx</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label1">File Type</label>
+                                         
+                                     
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 col-sm-6 col-md-6">
+                                  <div class="input-group-my pt-2">
+                                    
+                                    <div class="group mb-2 ">      
+                                      <select type="text" class="input1"   disabled required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">xxxx</option>
+                                      <option value="Software Deptt">xxxx</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label1">Customer</label>
+                                         
+                                     
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                             <div class="col-lg-12 col-12 col-sm-12 col-md-12 mb-2">
+                                
+                                <div class="card shadow-none">
+                                      <div class="card-header">
+                                        Serial No Validation
+                                      </div>
+                                      <div class="row p-1 my-2">
+                                        <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                            <div class="input-group-my pt-2">                                    
+                                                <div class="group mb-2 ">      
+                                                  <select type="text" class="input1"   disabled required>
+                                                  <option value=""> </option>
+                                                  <option value="Software Deptt">xxxxxx</option>
+                                                  <option value="Software Deptt">xxxxxx</option>             
+                                                  </select>                                                 
+                                                  <label class="label1">Scan Type </label>                       
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
+                                       <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1" disabled required>                                    
+                                         <label class="label1">SR No. Length </label>                
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1" disabled required>                                    
+                                         <label class="label1">Starting Position </label>                
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1" disabled required>                                    
+                                         <label class="label1">Validate Value</label>                
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1" disabled required>                                    
+                                         <label class="label1">Supplier</label>                
+                                       </div>
+                                      </div>
+                            </div>
+                                        <div class="col-lg-4 col-12 col-sm-4 col-md-4">
+                                            <div class="input-group-my pt-2">                                    
+                                                <div class="group mb-2 ">      
+                                                  <select type="text" class="input1"   disabled required>
+                                                  <option value=""> </option>
+                                                  <option value="Software Deptt">xxxxxx</option>
+                                                  <option value="Software Deptt">xxxxxx</option>             
+                                                  </select>                                                 
+                                                  <label class="label1">Sr.</label>                       
+                                                </div>
+                                        
+                                            </div>
+                                        </div>
+
+                                <div class="col-12 text-end">
+                                    <button type="button" class="btn btn-kec">Add</button>
+                                </div>
+                            
+                                    </div>
+                                
+                            </div>
+                             
+                            </div>
+
+
+                           
+                           
+                             
+                             
                             
                             </div>
                            <div class="row">
@@ -624,7 +867,7 @@
                                     <button type="button" class="btn btn-kec">Save</button>
                                     <button type="button" class="btn btn-warning">Refresh</button>
                                     <button type="button" class="btn btn-secondary" 
-                                    onclick="window.location.href = 'assembly.html'">Cancel</button>
+                                    onclick="window.location.href = 'MaterialMaster.html'">Cancel</button>
                                   </div>
                             </div>
                         </div>
