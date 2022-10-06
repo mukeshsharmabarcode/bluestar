@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueStar |   Material MIC DETAIL Report</title>
+    
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css.map">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+      <style>
+          .input1 {
+    
+    position: relative;
+}
+      </style>
+</head>
+
+<body >
+
+       <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo.png" alt="Comapny logo" class="p-3">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bi bi-x-circle"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-2.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                   HP1
+                </div>
+            </div>
+            <button class="btn btn-outline" onclick="window.location.href = 'index.html'">
+                <i class="bi bi-box-arrow-in-right" title="logout"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="dashboard.html" class="active">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+           
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown" >
+                    <i class="bi bi-journals"></i>
+                    <span>Masters</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="assembly.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Assembly Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ShiftMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Shift Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="StorageLocation.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Storage Master</span> 
+                        </a>
+                    </li>
+                    <li><a href="DefectMaster.html">
+                    <i class="bi bi-record-circle"></i>
+                    <span>Defect Master</span>
+                </a>
+            </li>
+            <li>
+                        <a href="DefectLocation.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Location Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MaterialMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MICMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>MIC Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ALToDLMapping.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Assembly Line Defect Mapping</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PrintFieldMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Print Field Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="BarcodeLabelFormat.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Barcode Label Formating Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ProductionBomMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Production BOM Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="SalesBomMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Sales BOM Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ChassisTypeMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Chasis Type Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ELTDefectMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Defect Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ELTTimeTestingMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Testing Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="SerialNumberLogic.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Serial No. Logic Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="SalesOrderMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Sales Order Master</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="CycleCount.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Cycle Counting Master</span> 
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                     <i class="bi bi-gear"></i>
+                    <span>settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="PlantMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Plants </span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="GroupMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Role Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="UserMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>User Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="DataLoggerMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Data Logger </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PrinterMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Printers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PermissionMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Permission</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="MICEditRightMaster.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Options</span>
+                        </a>
+                    </li>              
+                    
+                    
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Production Report</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="RptELTStatusReport.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="RptELT_FAILHISTORY.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>ELT Fail History Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTLoading.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Loading Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="RPTPackingReport.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Packing Serial Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Loading Packing Hourly Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Machine History Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTMaterialSerial.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material Serial Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTMaterialStatus.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material Status</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTMIC.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>MIC Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTLabelStatus.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Label Status Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTPendingPacking.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pending Packing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTBlockUnblock.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Block and Unblock Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTChassisWithoutComponentScanning.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Chassis without loading</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTDefectSummary.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Summary Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTLoadingPackingHourly.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Loading Packing Hourly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTReprint.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Reprint</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTMaterialMIC_Details.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Material MIC Detail</span>
+                        </a>
+                    </li>                                
+                    
+                    
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Other Report</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="RPTGoodsIssue.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Goods Issue Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="RPTGoodsReceive.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Goods Receiving Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RptDispatch.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Dispatch Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="RptComponentStatus.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Component Status Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RPTDefectReport.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Report</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="RPTDefectRecordingReport.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Defect Recording Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTQuality.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Quality Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTRejection.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Rejection Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTRework.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Rework Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTStorageLocation.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Storage Location Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTSalesRetun.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Sales Return Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTStockCount.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Stock Count Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTPTIDUStatus.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>PT IDU Status</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTContainerStuffing.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Container Stuffing Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTFirstTimeRight.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>First Time Right Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="RPTIDU.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>IDU Report</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>NRGP Report</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+            </li>
+          
+            
+            
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-person-lines-fill"></i>
+                    <span>Profile</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Change Password</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-logo" style="border-top: 1px solid #eee; height:auto;display: flex;
+        flex-direction: column;">
+            <img src="./images/logo-lg-1.png" alt="Comapny logo" style="height: 40px;">
+            <p class="py-2 small">Version : 1.0.0.20211210</p>
+            
+        </div>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-justify-left"></i>
+            </div>
+            <div class="main-title d-flex justify-content-between w-100">
+                <span>  Material MIC DETAIL Report</span> <span class="plant">Plant : 1801</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container-fluid bg-white shadow">
+                <div class="row">
+                    <div class="header-kec">
+                  <div class="col-lg-8 col-8 col-md-8 col-sm-7 p-0">
+                    <div class="dropdown">
+                        <button class="btn filter_btn  dropdown-toggle p-0" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <i class="bi bi-funnel"></i> <span>Filter</span>
+                        </button>
+                        <div class="dropdown-menu col-lg-12 col-12 my-filter" aria-labelledby="dropdownMenuClickable">
+                          <div class="row">
+                            
+                            <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Plant Code</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Print Type</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Material</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Shift </label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">1801</option>
+                                      <option value="Software Deptt">1802</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Line</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                
+                               
+                                
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6" style="position: relative;">
+                                    <div class="input-group-my pt-2">
+                                        <div class="group1 mb-2">      
+                                             <input type="text" class="input1"  id="from"  required> 
+                                             <label class="label1">From Date</label>                                     
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6 ">
+                                    <div class="input-group-my pt-2">
+                                        <div class="group1 mb-2">      
+                                             <input type="text" class="input1" id="to"  required> 
+                                             <label class="label1">To Date</label>                                     
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                
+                                
+                                
+                               
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-kec">Apply</button>
+                                <button type="button" class="btn btn-secondary">Clear</button>
+                              </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-3 col-sm-2 pe-0 m-0">
+                    <!-- <div class="input-group-my" style="padding-top: 6px;">
+                        <div class="group m-0  search-toggle"  >  
+                                
+                             <input type="text" class="input"  required>                                
+                             <label class="label">Search </label>
+                             
+                           </div>
+                            <span class="search "><i class="bi bi-search"></i></span>
+                          </div> -->
+                  </div>
+                  <div class="col-lg-1 col-2 col-sm-2 p-0 m-0 d-flex">
+                    <a href="#" class="btn kec-add-btn">
+                         <span><i class="bi bi-file-earmark-excel-fill"></i></span>
+                     </a>
+                     <a href="#" class="btn kec-add-btn">
+                         <span><i class="bi bi-filetype-pdf"></i></span>
+                     </a>
+                        
+                    
+                  </div>
+                </div>
+                </div>
+             <div class="row">
+                 <div class="body-table">
+                  <table class="table table-striped table-hover table-bordered table-responsive text-center">
+                    <thead class="table-dark text-center">
+                        <tr>
+                          <th  class="text-center" scope="col">Sr. No.</th>
+                          <th class="text-center" scope="col">Plant Code</th>
+                          <th class="text-center" scope="col">Material Code</th>
+                          <th class="text-center" scope="col">Serial No.</th>
+                          <th class="text-center" scope="col">Shift</th>
+                          <th class="text-center" scope="col">Line No</th>  
+                          <th class="text-center" scope="col">Date</th>
+                          
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>BR</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>VM</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                          
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>BR</td>
+                            <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>VM</td>
+                            <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>BR</td>
+                            <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                           
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>VM</td>
+                            <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>BR</td>
+                            <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>VM</td>
+                            <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>abcd</td>
+                          <td>xx-xx-xxxx</td>
+                            
+                          </tr>
+                        
+                      </tbody>
+                  </table>
+                </div>
+             </div>
+
+            </div>
+               
+            </div>
+
+           
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    
+    <!-- APP JS -->
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+   <!--  <script src="./js/Chart.js"></script> -->
+    <script src="./js/app.js"></script>
+       <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({         
+          changeMonth: true,
+          changeYear: true,
+          numberOfMonths: 1
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1
+      }),
+      from1 = $( "#from1" )
+        .datepicker({         
+          changeMonth: true,
+          changeYear: true,
+          numberOfMonths: 1
+        }),
+      to1 = $( "#to1" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1
+      })
+      
+ 
+    
+  } );
+  </script>
+
+</body>
+
+</html>
