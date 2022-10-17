@@ -1,5 +1,45 @@
 $(document).ready(function(){ 
-
+ var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({         
+          
+           beforeShow: function (input, inst) {
+        var rect = input.getBoundingClientRect();
+        setTimeout(function () {
+            inst.dpDiv.css({ top: rect.top - 30, left: rect.left + 0 });
+        }, 0);
+    }
+        }),
+      to = $( "#to" ).datepicker({
+        
+         beforeShow: function (input, inst) {
+        var rect = input.getBoundingClientRect();
+        setTimeout(function () {
+            inst.dpDiv.css({ top: rect.top - 30, left: rect.left + 0 });
+        }, 0);
+    }
+      }),
+      from1 = $( "#from1" )
+        .datepicker({         
+        
+           beforeShow: function (input, inst) {
+        var rect = input.getBoundingClientRect();
+        setTimeout(function () {
+            inst.dpDiv.css({ top: rect.top - 30, left: rect.left + 0 });
+        }, 0);
+    }
+        }),
+      to1 = $( "#to1" ).datepicker({
+       
+         beforeShow: function (input, inst) {
+        var rect = input.getBoundingClientRect();
+        setTimeout(function () {
+            inst.dpDiv.css({ top: rect.top - 30, left: rect.left + 0 });
+        }, 0);
+    }
+      })
+      
+ 
    showAlert = (cnt,type) => {
   
     $(".simple-alert").show();
@@ -424,3 +464,7 @@ new Chart("title", {
     legend: {display: false}
   }
 });
+ $( function() {
+   
+    
+  } );
