@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap.css.map">
     <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <style>
+        .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+    </style>
 </head>
 <body oncontextmenu="return false;" oncopy="return false;" onpaste="return false;">
     <div class="wrapper">
@@ -28,7 +39,7 @@
           </div>
           <form  onSubmit="return fillup();" action="dashboard.html">
               <div class="inp-control">
-                <input type="text" class=" my-input" id="usr" placeholder="Enter User Id" onTouchStart="this.disable = true"
+                <input type="text" class=" my-input noselect" id="usr" placeholder="Enter User Id" onTouchStart="this.disable = true"
                     onTouchEnd="this.disable = true"
                 autocomplete="off" required >
                 <i class="bi bi-person usr"></i>
