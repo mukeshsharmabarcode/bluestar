@@ -21,6 +21,11 @@
                                   supported by Chrome and Opera */
 }
     </style>
+    <script>
+        document.addEventListener('long-press', function(e) {
+  e.target.setAttribute('disable', 'true');
+});
+    </script>
 </head>
 <body oncontextmenu="return false;" oncopy="return false;" onpaste="return false;">
     <div class="wrapper">
